@@ -8,5 +8,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run a one-line script
-        run: echo ${{ secrets.my_credential }} > secret_file
+        run: echo my secret is ${{ secrets.my_credential }} > secret_file
 
