@@ -1,0 +1,12 @@
+name: gh-actions test
+on:
+  workflow_dispatch:
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run a one-line script
+        run: echo ${{ secret.my_credential }} > secret_file
+
